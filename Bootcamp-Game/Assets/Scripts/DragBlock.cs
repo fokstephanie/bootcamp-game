@@ -21,7 +21,7 @@ public class DragBlock : MonoBehaviour, IPointerDownHandler, IPointerUpHandler {
 	{
 		Debug.Log("OnPointerUp");
 		dragging = false;
-		transform.position = originalPosition;
+		transform.localPosition = originalPosition;
 	}
 
 	public void OnDrag() {
@@ -35,14 +35,14 @@ public class DragBlock : MonoBehaviour, IPointerDownHandler, IPointerUpHandler {
 			// Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
 			// Vector3 rayPoint = ray.GetPoint (distance);
 			// transform.position = rayPoint;
-			transform.position = Camera.main.ScreenToViewportPoint(Input.mousePosition);
+			transform.localPosition = Camera.main.ScreenToViewportPoint(Input.mousePosition);
 		} 
 	}
 
 	// Use this for initialization
 	void Start () {
 		Debug.Log("Start");
-		originalPosition = transform.posi;
+		originalPosition = transform.localPosition;
 		Debug.Log("originalPosition = " + originalPosition);
 	}
 

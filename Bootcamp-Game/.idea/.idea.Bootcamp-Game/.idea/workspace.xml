@@ -2,21 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e6457079-7e62-4874-a05a-cbf1512f9ea8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Main.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/DragBlock.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DragBlock.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bootcamp-Game.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Bootcamp-Game.sln" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/CrashedAssetImports.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/EditorInstance.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/EditorInstance.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll.mdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll.mdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/assetDatabase3" beforeDir="false" afterPath="$PROJECT_DIR$/Library/assetDatabase3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/metadata/ad/adbb1bace30844107986aedb857bc69c" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/ad/adbb1bace30844107986aedb857bc69c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-05cdfe6ba2480486ba5c200b0844c99b" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-83fd3942185ad4cdc8a39380bb6cd589" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Temp/__Backupscenes/0.backup" beforeDir="false" afterPath="$PROJECT_DIR$/Temp/__Backupscenes/0.backup" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,18 +18,18 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/DragBlock.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="46" column="28" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
+            <state relative-caret-position="540">
+              <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
               <folding>
-                <marker date="1546975729903" expanded="false" signature="6:132" ph="..." />
-                <marker date="1546975729903" expanded="true" signature="213:1293" ph="{...}" />
-                <marker date="1546975729903" expanded="true" signature="402:546" ph="{...}" />
-                <marker date="1546975729903" expanded="true" signature="600:695" ph="{...}" />
-                <marker date="1546975729903" expanded="true" signature="719:725" ph="{...}" />
-                <marker date="1546975729903" expanded="true" signature="777:1041" ph="{...}" />
-                <marker date="1546975729903" expanded="true" signature="797:1037" ph="{...}" />
-                <marker date="1546975729903" expanded="true" signature="802:953" ph="/* Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition); ... */" />
-                <marker date="1546975729903" expanded="true" signature="1090:1290" ph="{...}" />
+                <marker date="1546976270274" expanded="false" signature="6:132" ph="..." />
+                <marker date="1546976270274" expanded="true" signature="213:1274" ph="{...}" />
+                <marker date="1546976270274" expanded="true" signature="367:511" ph="{...}" />
+                <marker date="1546976270274" expanded="true" signature="565:660" ph="{...}" />
+                <marker date="1546976270274" expanded="true" signature="684:690" ph="{...}" />
+                <marker date="1546976270274" expanded="true" signature="742:1006" ph="{...}" />
+                <marker date="1546976270274" expanded="true" signature="762:1002" ph="{...}" />
+                <marker date="1546976270274" expanded="true" signature="767:918" ph="/* Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition); ... */" />
+                <marker date="1546976270274" expanded="true" signature="1055:1271" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -130,12 +119,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1546974641850</updated>
-      <workItem from="1546974645985" duration="859000" />
+      <workItem from="1546974645985" duration="1287000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="859000" />
+    <option name="totallyTimeSpent" value="1287000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -200,18 +189,18 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/DragBlock.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="46" column="28" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
+        <state relative-caret-position="540">
+          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
           <folding>
-            <marker date="1546975729903" expanded="false" signature="6:132" ph="..." />
-            <marker date="1546975729903" expanded="true" signature="213:1293" ph="{...}" />
-            <marker date="1546975729903" expanded="true" signature="402:546" ph="{...}" />
-            <marker date="1546975729903" expanded="true" signature="600:695" ph="{...}" />
-            <marker date="1546975729903" expanded="true" signature="719:725" ph="{...}" />
-            <marker date="1546975729903" expanded="true" signature="777:1041" ph="{...}" />
-            <marker date="1546975729903" expanded="true" signature="797:1037" ph="{...}" />
-            <marker date="1546975729903" expanded="true" signature="802:953" ph="/* Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition); ... */" />
-            <marker date="1546975729903" expanded="true" signature="1090:1290" ph="{...}" />
+            <marker date="1546976270274" expanded="false" signature="6:132" ph="..." />
+            <marker date="1546976270274" expanded="true" signature="213:1274" ph="{...}" />
+            <marker date="1546976270274" expanded="true" signature="367:511" ph="{...}" />
+            <marker date="1546976270274" expanded="true" signature="565:660" ph="{...}" />
+            <marker date="1546976270274" expanded="true" signature="684:690" ph="{...}" />
+            <marker date="1546976270274" expanded="true" signature="742:1006" ph="{...}" />
+            <marker date="1546976270274" expanded="true" signature="762:1002" ph="{...}" />
+            <marker date="1546976270274" expanded="true" signature="767:918" ph="/* Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition); ... */" />
+            <marker date="1546976270274" expanded="true" signature="1055:1271" ph="{...}" />
           </folding>
         </state>
       </provider>
