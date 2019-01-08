@@ -2,10 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e6457079-7e62-4874-a05a-cbf1512f9ea8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Bootcamp-Game/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Bootcamp-Game/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Bootcamp-Game/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Bootcamp-Game/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Main.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/DragBlock.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DragBlock.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/CrashedAssetImports.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ProtocolInstance.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ProtocolInstance.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll.mdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll.mdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/assetDatabase3" beforeDir="false" afterPath="$PROJECT_DIR$/Library/assetDatabase3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/metadata/ad/adbb1bace30844107986aedb857bc69c" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/ad/adbb1bace30844107986aedb857bc69c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/__Backupscenes/0.backup" beforeDir="false" afterPath="$PROJECT_DIR$/Temp/__Backupscenes/0.backup" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,18 +25,18 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/DragBlock.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+            <state relative-caret-position="555">
+              <caret line="41" column="51" selection-start-line="41" selection-start-column="51" selection-end-line="41" selection-end-column="51" />
               <folding>
-                <marker date="1546976270274" expanded="false" signature="6:132" ph="..." />
-                <marker date="1546976270274" expanded="true" signature="213:1274" ph="{...}" />
-                <marker date="1546976270274" expanded="true" signature="367:511" ph="{...}" />
-                <marker date="1546976270274" expanded="true" signature="565:660" ph="{...}" />
-                <marker date="1546976270274" expanded="true" signature="684:690" ph="{...}" />
-                <marker date="1546976270274" expanded="true" signature="742:1006" ph="{...}" />
-                <marker date="1546976270274" expanded="true" signature="762:1002" ph="{...}" />
-                <marker date="1546976270274" expanded="true" signature="767:918" ph="/* Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition); ... */" />
-                <marker date="1546976270274" expanded="true" signature="1055:1271" ph="{...}" />
+                <marker date="1546977580940" expanded="false" signature="6:132" ph="..." />
+                <marker date="1546977580940" expanded="true" signature="213:1056" ph="{...}" />
+                <marker date="1546977580940" expanded="true" signature="368:482" ph="{...}" />
+                <marker date="1546977580940" expanded="true" signature="536:608" ph="{...}" />
+                <marker date="1546977580940" expanded="true" signature="632:638" ph="{...}" />
+                <marker date="1546977580940" expanded="true" signature="690:954" ph="{...}" />
+                <marker date="1546977580940" expanded="true" signature="710:950" ph="{...}" />
+                <marker date="1546977580940" expanded="true" signature="715:866" ph="/* Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition); ... */" />
+                <marker date="1546977580940" expanded="true" signature="1003:1053" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -119,12 +126,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1546974641850</updated>
-      <workItem from="1546974645985" duration="1287000" />
+      <workItem from="1546974645985" duration="2374000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1287000" />
+    <option name="totallyTimeSpent" value="2374000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -189,18 +196,18 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/DragBlock.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+        <state relative-caret-position="555">
+          <caret line="41" column="51" selection-start-line="41" selection-start-column="51" selection-end-line="41" selection-end-column="51" />
           <folding>
-            <marker date="1546976270274" expanded="false" signature="6:132" ph="..." />
-            <marker date="1546976270274" expanded="true" signature="213:1274" ph="{...}" />
-            <marker date="1546976270274" expanded="true" signature="367:511" ph="{...}" />
-            <marker date="1546976270274" expanded="true" signature="565:660" ph="{...}" />
-            <marker date="1546976270274" expanded="true" signature="684:690" ph="{...}" />
-            <marker date="1546976270274" expanded="true" signature="742:1006" ph="{...}" />
-            <marker date="1546976270274" expanded="true" signature="762:1002" ph="{...}" />
-            <marker date="1546976270274" expanded="true" signature="767:918" ph="/* Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition); ... */" />
-            <marker date="1546976270274" expanded="true" signature="1055:1271" ph="{...}" />
+            <marker date="1546977580940" expanded="false" signature="6:132" ph="..." />
+            <marker date="1546977580940" expanded="true" signature="213:1056" ph="{...}" />
+            <marker date="1546977580940" expanded="true" signature="368:482" ph="{...}" />
+            <marker date="1546977580940" expanded="true" signature="536:608" ph="{...}" />
+            <marker date="1546977580940" expanded="true" signature="632:638" ph="{...}" />
+            <marker date="1546977580940" expanded="true" signature="690:954" ph="{...}" />
+            <marker date="1546977580940" expanded="true" signature="710:950" ph="{...}" />
+            <marker date="1546977580940" expanded="true" signature="715:866" ph="/* Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition); ... */" />
+            <marker date="1546977580940" expanded="true" signature="1003:1053" ph="{...}" />
           </folding>
         </state>
       </provider>
