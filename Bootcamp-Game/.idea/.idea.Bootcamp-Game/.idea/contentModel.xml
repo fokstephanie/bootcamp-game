@@ -55,6 +55,7 @@
       </e>
       <e p="Assets/Scripts" t="Include">
         <e p="DragBlock.cs" t="Include" />
+        <e p="GridObserver.cs" t="Include" />
       </e>
       <e p="Bootcamp-Game.sln" t="IncludeFlat" />
       <e p="Library" t="ExcludeRecursive" />

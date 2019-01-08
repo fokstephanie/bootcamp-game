@@ -4,8 +4,10 @@
     <list default="true" id="e6457079-7e62-4874-a05a-cbf1512f9ea8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Bootcamp-Game/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Bootcamp-Game/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Bootcamp-Game/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Bootcamp-Game/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Main.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/DragBlock.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DragBlock.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bootcamp-Game.userprefs" beforeDir="false" afterPath="$PROJECT_DIR$/Bootcamp-Game.userprefs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/CrashedAssetImports.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ProtocolInstance.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ProtocolInstance.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
@@ -22,21 +24,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/DragBlock.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="41" column="51" selection-start-line="41" selection-start-column="51" selection-end-line="41" selection-end-column="51" />
+            <state relative-caret-position="195">
+              <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
               <folding>
-                <marker date="1546977580940" expanded="false" signature="6:132" ph="..." />
-                <marker date="1546977580940" expanded="true" signature="213:1056" ph="{...}" />
-                <marker date="1546977580940" expanded="true" signature="368:482" ph="{...}" />
-                <marker date="1546977580940" expanded="true" signature="536:608" ph="{...}" />
-                <marker date="1546977580940" expanded="true" signature="632:638" ph="{...}" />
-                <marker date="1546977580940" expanded="true" signature="690:954" ph="{...}" />
-                <marker date="1546977580940" expanded="true" signature="710:950" ph="{...}" />
-                <marker date="1546977580940" expanded="true" signature="715:866" ph="/* Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition); ... */" />
-                <marker date="1546977580940" expanded="true" signature="1003:1053" ph="{...}" />
+                <marker date="1546978519222" expanded="false" signature="6:132" ph="..." />
+                <marker date="1546978519222" expanded="true" signature="213:861" ph="{...}" />
+                <marker date="1546978519222" expanded="true" signature="393:507" ph="{...}" />
+                <marker date="1546978519222" expanded="true" signature="561:633" ph="{...}" />
+                <marker date="1546978519222" expanded="true" signature="685:759" ph="{...}" />
+                <marker date="1546978519222" expanded="true" signature="705:755" ph="{...}" />
+                <marker date="1546978519222" expanded="true" signature="808:858" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/GridObserver.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="570">
+              <caret line="38" column="8" lean-forward="true" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
+              <folding>
+                <marker date="1546980503974" expanded="true" signature="6:78" ph="..." />
+                <marker date="1546980503974" expanded="true" signature="143:1070" ph="{...}" />
+                <marker date="1546980503974" expanded="true" signature="304:1006" ph="{...}" />
+                <marker date="1546980503974" expanded="true" signature="406:488" ph="{...}" />
+                <marker date="1546980503974" expanded="true" signature="441:484" ph="{...}" />
+                <marker date="1546980503974" expanded="true" signature="563:894" ph="{...}" />
+                <marker date="1546980503974" expanded="true" signature="614:858" ph="{...}" />
+                <marker date="1546980503974" expanded="true" signature="1061:1068" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -49,11 +68,13 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DragBlock.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GridObserver.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/DragBlock.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GridObserver.cs" />
       </list>
     </option>
   </component>
@@ -78,6 +99,20 @@
         <option name="show-all-files" value="false" />
       </pane>
       <pane id="UnityExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
         <option name="show-hidden-items" value="false" />
       </pane>
       <pane id="FileSystemExplorer" />
@@ -126,12 +161,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1546974641850</updated>
-      <workItem from="1546974645985" duration="2374000" />
+      <workItem from="1546974645985" duration="5258000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2374000" />
+    <option name="totallyTimeSpent" value="5258000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -194,20 +229,38 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Assets/GridObserver.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/DragBlock.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="41" column="51" selection-start-line="41" selection-start-column="51" selection-end-line="41" selection-end-column="51" />
+        <state relative-caret-position="195">
+          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
           <folding>
-            <marker date="1546977580940" expanded="false" signature="6:132" ph="..." />
-            <marker date="1546977580940" expanded="true" signature="213:1056" ph="{...}" />
-            <marker date="1546977580940" expanded="true" signature="368:482" ph="{...}" />
-            <marker date="1546977580940" expanded="true" signature="536:608" ph="{...}" />
-            <marker date="1546977580940" expanded="true" signature="632:638" ph="{...}" />
-            <marker date="1546977580940" expanded="true" signature="690:954" ph="{...}" />
-            <marker date="1546977580940" expanded="true" signature="710:950" ph="{...}" />
-            <marker date="1546977580940" expanded="true" signature="715:866" ph="/* Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition); ... */" />
-            <marker date="1546977580940" expanded="true" signature="1003:1053" ph="{...}" />
+            <marker date="1546978519222" expanded="false" signature="6:132" ph="..." />
+            <marker date="1546978519222" expanded="true" signature="213:861" ph="{...}" />
+            <marker date="1546978519222" expanded="true" signature="393:507" ph="{...}" />
+            <marker date="1546978519222" expanded="true" signature="561:633" ph="{...}" />
+            <marker date="1546978519222" expanded="true" signature="685:759" ph="{...}" />
+            <marker date="1546978519222" expanded="true" signature="705:755" ph="{...}" />
+            <marker date="1546978519222" expanded="true" signature="808:858" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GridObserver.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="38" column="8" lean-forward="true" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
+          <folding>
+            <marker date="1546980503974" expanded="true" signature="6:78" ph="..." />
+            <marker date="1546980503974" expanded="true" signature="143:1070" ph="{...}" />
+            <marker date="1546980503974" expanded="true" signature="304:1006" ph="{...}" />
+            <marker date="1546980503974" expanded="true" signature="406:488" ph="{...}" />
+            <marker date="1546980503974" expanded="true" signature="441:484" ph="{...}" />
+            <marker date="1546980503974" expanded="true" signature="563:894" ph="{...}" />
+            <marker date="1546980503974" expanded="true" signature="614:858" ph="{...}" />
+            <marker date="1546980503974" expanded="true" signature="1061:1068" ph="{...}" />
           </folding>
         </state>
       </provider>

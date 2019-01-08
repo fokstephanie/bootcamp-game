@@ -1718,6 +1718,7 @@ GameObject:
   - component: {fileID: 445947891}
   - component: {fileID: 445947890}
   - component: {fileID: 445947889}
+  - component: {fileID: 445947893}
   m_Layer: 5
   m_Name: PlayGridHorizontal
   m_TagString: Untagged
@@ -1819,6 +1820,17 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 445947887}
+--- !u!114 &445947893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 445947887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 463494daf4bc24c5abad1ca24e4cc1e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &462424767
 GameObject:
   m_ObjectHideFlags: 0
@@ -4394,7 +4406,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.0000076293945, y: -0.0000076293945}
+  m_AnchoredPosition: {x: -0.000015258789, y: -0.000015258789}
   m_SizeDelta: {x: -58.5, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &911144539
@@ -7177,7 +7189,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -1.3000183, y: 123}
+  m_AnchoredPosition: {x: -1.2999878, y: 123}
   m_SizeDelta: {x: -168.5, y: 0}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1505751837
@@ -8718,7 +8730,7 @@ GameObject:
   - component: {fileID: 1890490485}
   - component: {fileID: 1890490484}
   m_Layer: 5
-  m_Name: Panel (4)
+  m_Name: Panel (4) 999999
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
