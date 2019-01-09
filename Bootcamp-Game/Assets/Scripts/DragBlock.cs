@@ -12,8 +12,10 @@ public class DragBlock : MonoBehaviour, IPointerDownHandler, IPointerUpHandler {
 	private Vector3 originalPosition;
 	private Vector3 largeSize = new Vector3(1.6f, 1.6f, 1.6f);
 	private Vector3 normalSize = Vector3.one;
-
+	[SerializeField]
+	private GridObserver observer; /* drag and drop for each */
 	public bool spaceFound = false;
+	public GridObserver.BlockTypes blockType;
 
 	public void OnPointerDown(PointerEventData eventData)
 	{
@@ -27,13 +29,10 @@ public class DragBlock : MonoBehaviour, IPointerDownHandler, IPointerUpHandler {
 		dragging = false;
 		
 		// Check where the mouse currently is
-		spaceFound = GridObserver.canDropBlock(Input.mousePosition, GridObserver.BlockTypes.zBlock);
+		spaceFound = this.observer.canDropBlock(Input.mousePosition, blockType);
 		
 		if (spaceFound) {
-			Debug.Log("***** SPACE FOUND");
 			DestroyObject(gameObject);
-			// Lock piece into place (by setting grid colours)
-			// Piece instance gets destroyed
 		}
 		else {
 			transform.localPosition = originalPosition;
