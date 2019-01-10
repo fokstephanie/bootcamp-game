@@ -59,6 +59,7 @@
         <e p="GridCell.cs" t="Include" />
         <e p="GridObserver.cs" t="Include" />
         <e p="MenuAnimations.cs" t="Include" />
+        <e p="PlayButton.cs" t="Include" />
       </e>
       <e p="Bootcamp-Game.sln" t="IncludeFlat" />
       <e p="Library" t="ExcludeRecursive" />

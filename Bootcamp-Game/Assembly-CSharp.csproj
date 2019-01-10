@@ -109,6 +109,7 @@
     <Compile Include="Assets\Scripts\GridCell.cs" />
     <Compile Include="Assets\Scripts\GridObserver.cs" />
     <Compile Include="Assets\Scripts\MenuAnimations.cs" />
+    <Compile Include="Assets\Scripts\PlayButton.cs" />
     <None Include="Assets\LeanTween\Examples\Archived\2dUnlitWithFade.shader" />
     <None Include="Assets\LeanTween\ReadMe.txt" />
     <None Include="Assets\LeanTween\License.txt" />
