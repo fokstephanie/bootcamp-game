@@ -11,8 +11,11 @@ public class GridObserver : MonoBehaviour
 	public  Vector4 gridBoundriesExtended;
 	public  Vector4 gridBoundriesActual;
 	public GameObject grid;
+	public GameObject settingsPrompt;
+	public GameObject backToHomePrompt;
 	public Camera mainCam;
 	public float raycastSize = 20f;
+	private Color32 darkBlue = new Color32(26, 47, 58, 255);
 
 	public enum BlockTypes
 	{
@@ -116,6 +119,8 @@ public class GridObserver : MonoBehaviour
 	// Use this for initialization
 	void Start ()
 	{
+		backToHomePrompt.SetActive(false);
+		settingsPrompt.SetActive(false);
 		int rowCount = 0;
 		int colCount = 0;
 		// Populate gridBoolArray
@@ -284,21 +289,32 @@ public class GridObserver : MonoBehaviour
 		CheckLines(arrayRows, arrayCols, topLeftSquareIndex);
 	}
 
+	private void SetColours(int row, int col, Color val)
+	{
+		Debug.Log("col value: " + col);
+		Debug.Log("row value: " + row);
+		gridColourArray[row, col].GetComponent<Image>().color = val;
+	}
+
 	private void ClearRow(int row)
 	{
 		for (int i = 0; i < 8; i++)
 		{
 			gridBoolArray[row, i] = false;
-			gridColourArray[row, i].GetComponent<Image>().color = Color.white;
+			gridColourArray[row, i].GetComponent<Image>().color = darkBlue;
+			LeanTween.value(gridColourArray[row, i], darkBlue, Color.white, 0.9f).setOnUpdateParam(i).setEaseOutQuad()
+				.setOnUpdateColor((Color val, object col) => SetColours(row, (int)col, val));
 		}
-	}
+	} 
 
 	private void ClearCol(int col)
 	{
 		for (int i = 0; i < 8; i++)
 		{
 			gridBoolArray[i, col] = false;
-			gridColourArray[i, col].GetComponent<Image>().color = Color.white;
+			gridColourArray[i, col].GetComponent<Image>().color = darkBlue;
+			LeanTween.value(gridColourArray[i, col], darkBlue, Color.white, 0.9f).setOnUpdateParam(i).setEaseOutQuad()
+				.setOnUpdateColor((Color val, object row) => SetColours((int)row, col, val));
 		}
 	}
 

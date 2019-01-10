@@ -57,19 +57,18 @@ public class MenuAnimations : MonoBehaviour
 	
 	public void Play()
 	{
-		Debug.Log("PLAY BUTTON HIT");
 		blackScreen.SetActive((true));
 		LeanTween.alpha(blackScreen.GetComponent<RectTransform>(), 0, 0);
 		
 		// Animate blackScreen fade, switch scenes
 		LeanTween.alpha(blackScreen.GetComponent<RectTransform>(), 1, 0.8f).setEaseInCubic()
-			.setOnComplete(LoadScene);
+			.setOnComplete(() => LoadScene("Main"));
 		
 	}
 
-	private void LoadScene()
+	private void LoadScene(string sceneName)
 	{
-		SceneManager.LoadScene("Main");
+		SceneManager.LoadScene(sceneName);
 	}
 
 	
