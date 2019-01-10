@@ -8,6 +8,9 @@ public class ButtonsClicked : MonoBehaviour
 	public GameObject blackScreen;
 	public GameObject backToHomePrompt;
 	public GameObject settingsPrompt;
+	public GameObject changeThemeButton;
+	public GameObject regularCanvas;
+	public GameObject christmasCanvas;
 	private Color32 darkBlue = new Color32(26, 47, 58, 255);
 
 	// Use this for initialization
@@ -49,5 +52,21 @@ public class ButtonsClicked : MonoBehaviour
 	public void ClickCloseSettings()
 	{
 		settingsPrompt.SetActive(false);
+	}
+
+	public void ClickChangeTheme()
+	{
+		blackScreen.SetActive((true));
+		LeanTween.alpha(blackScreen.GetComponent<RectTransform>(), 0, 0);
+		
+		// Animate blackScreen fade, switch scenes
+		LeanTween.alpha(blackScreen.GetComponent<RectTransform>(), 1, 0.8f).setEaseInCubic()
+			.setOnComplete(SwitchCanvas);
+	}
+
+	private void SwitchCanvas()
+	{
+		regularCanvas.SetActive(false);
+		christmasCanvas.SetActive(true);
 	}
 }
