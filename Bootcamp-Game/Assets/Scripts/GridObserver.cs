@@ -295,9 +295,6 @@ public class GridObserver : MonoBehaviour
 		int random1 = Random.Range(0, 10);
 		int random2 = Random.Range(0, 10);
 		int random3 = Random.Range(0, 10);
-		Debug.Log("random1: " + random1);
-		Debug.Log("random2: " + random2);
-		Debug.Log("random3: " + random3);
 		
 		Transform[] carouselAllChildren;
 		carouselAllChildren = carousel.GetComponentsInChildren<Transform>();
@@ -320,9 +317,11 @@ public class GridObserver : MonoBehaviour
 		Object randomObj2 = arrayOfBlocks[random2];
 		Object randomObj3 = arrayOfBlocks[random3];
 		
-		//Instantiate(randomObj1, new Vector3(0, 0, 0), Quaternion.identity, carouselPanel1);
-		//Instantiate(randomObj2, new Vector3(0, 0, 0), Quaternion.identity, carouselPanel2);
-		//Instantiate(randomObj3, new Vector3(0, 0, 0), Quaternion.identity, carouselPanel3);
+		// Animate-in carousel 
+		Vector3 carouselFinalPosition = carousel.GetComponent<RectTransform>().localPosition;
+		LeanTween.moveLocalX(carousel, carouselFinalPosition.x + 650, 0);
+		LeanTween.moveLocalX(carousel, carouselFinalPosition.x, 1.4f).setEaseOutQuint().setDelay(0.2f);
+		
 		Instantiate(randomObj1, carouselPanel1, false);
 		Instantiate(randomObj2, carouselPanel2, false);
 		Instantiate(randomObj3, carouselPanel3, false);
@@ -361,8 +360,6 @@ public class GridObserver : MonoBehaviour
 
 	private void SetColours(int row, int col, Color val)
 	{
-		Debug.Log("col value: " + col);
-		Debug.Log("row value: " + row);
 		gridColourArray[row, col].GetComponent<Image>().color = val;
 	}
 

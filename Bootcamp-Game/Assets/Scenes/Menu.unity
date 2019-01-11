@@ -779,7 +779,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &118199235
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2814,6 +2814,8 @@ GameObject:
   - component: {fileID: 500688448}
   - component: {fileID: 500688447}
   - component: {fileID: 500688450}
+  - component: {fileID: 500688452}
+  - component: {fileID: 500688451}
   m_Layer: 5
   m_Name: ChangeTheme
   m_TagString: Untagged
@@ -2937,6 +2939,37 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!95 &500688451
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 500688445}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ec5a39f9701ca47da81cbfeb5881159e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!111 &500688452
+Animation:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 500688445}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 0}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1001 &508178662
 Prefab:
   m_ObjectHideFlags: 0
@@ -6306,12 +6339,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   squareSize: 0
-  gridBoundriesExtended: {x: 0, y: 0, z: 0, w: 0}
-  gridBoundriesActual: {x: 0, y: 0, z: 0, w: 0}
   grid: {fileID: 1129012556}
   settingsPrompt: {fileID: 0}
   backToHomePrompt: {fileID: 0}
-  mainCam: {fileID: 0}
+  carousel: {fileID: 0}
+  zBlock: {fileID: 0}
+  sBlock: {fileID: 0}
+  lBlock: {fileID: 0}
+  reverseLBlock: {fileID: 0}
+  tBlock: {fileID: 0}
+  iBlock: {fileID: 0}
+  flatIBlock: {fileID: 0}
+  smallOBlock: {fileID: 0}
+  oBlock: {fileID: 0}
+  bigOBlock: {fileID: 0}
   raycastSize: 60
 --- !u!114 &1129012560
 MonoBehaviour:
@@ -11409,7 +11450,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 100
+      scalar: 40
       minScalar: 5
       maxCurve:
         serializedVersion: 2
