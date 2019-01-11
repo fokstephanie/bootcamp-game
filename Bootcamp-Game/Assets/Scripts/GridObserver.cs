@@ -177,6 +177,8 @@ public class GridObserver : MonoBehaviour
 		// gridBoundriesExtended = new Vector4(0, 339, 571, 231);
 		// gridBoundriesActual = new Vector4(38, 339, 534, 231);
 
+		GenerateNewBlocks();
+
 	}
 
 	public Vector3 getTopLeftBlockCoordinate(Vector3 mousePosition, BlockTypes blockType)
@@ -319,7 +321,8 @@ public class GridObserver : MonoBehaviour
 		
 		// Animate-in carousel 
 		Vector3 carouselFinalPosition = carousel.GetComponent<RectTransform>().localPosition;
-		LeanTween.moveLocalX(carousel, carouselFinalPosition.x + 650, 0);
+		LeanTween.moveLocalX(carousel, carouselFinalPosition.x + 850, 0);
+		// Debug.Log("Screen width: " + Screen.width);
 		LeanTween.moveLocalX(carousel, carouselFinalPosition.x, 1.4f).setEaseOutQuint().setDelay(0.2f);
 		
 		Instantiate(randomObj1, carouselPanel1, false);

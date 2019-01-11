@@ -12,6 +12,7 @@ public class ColourSliderHandler : MonoBehaviour, IPointerDownHandler, IPointerU
 	public Image gameBackground;
 	public Image displayBarBackground;
 	public GameObject settingsTitle;
+	public GameObject backgroundColourLabel;
 	private float sliderValue;
 	private Color32 transparent = new Color32(0, 0, 0, 0);
 	private Color32 moreTransparentBlack = new Color32(0, 0, 0, 114);
@@ -53,6 +54,7 @@ public class ColourSliderHandler : MonoBehaviour, IPointerDownHandler, IPointerU
 			background.color = transparent;
 			solidBlackBackground.color = transparent;
 			settingsTitle.SetActive((false));
+			backgroundColourLabel.SetActive((false));
 		}
 	}
 	
@@ -61,6 +63,7 @@ public class ColourSliderHandler : MonoBehaviour, IPointerDownHandler, IPointerU
 		background.color = moreTransparentBlack;
 		solidBlackBackground.color = lessTransparentBlack;
 		settingsTitle.SetActive((true));
+		backgroundColourLabel.SetActive((true));
 	}
 
 	public void SettingsColourSlider()
@@ -68,6 +71,7 @@ public class ColourSliderHandler : MonoBehaviour, IPointerDownHandler, IPointerU
 		background.color = transparent;
 		solidBlackBackground.color = transparent;
 		settingsTitle.SetActive((false));
+		backgroundColourLabel.SetActive((false));
 		sliderValue = slider.value;
 		if (darkBlueH != null)
 		{

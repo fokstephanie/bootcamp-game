@@ -15,6 +15,7 @@ public class MenuAnimations : MonoBehaviour
 	public GameObject blackScreen;
 	public GameObject playButton;
 	public GameObject playSymbol;
+	public GameObject changeThemeButton;
 
 	// Use this for initialization
 	void Start () {
@@ -25,13 +26,15 @@ public class MenuAnimations : MonoBehaviour
 		float buttonFinalPosition = 102;
 	
 		blackScreen.SetActive((false));
-		//playButton.GetComponent<Button>().interactable = false;
+		changeThemeButton.GetComponent<Animator>().enabled = false;
+		playButton.GetComponent<Button>().interactable = false;
 		
 		// Set initial values
 		LeanTween.alpha(left8.GetComponent<RectTransform>(), 0, 0);
 		LeanTween.alpha(right8.GetComponent<RectTransform>(), 0, 0);
 		LeanTween.alpha(playButton.GetComponent<RectTransform>(), 0, 0);
 		LeanTween.alpha(playSymbol.GetComponent<RectTransform>(), 0, 0);
+		LeanTween.alpha(changeThemeButton.GetComponent<RectTransform>(), 0, 0);
 		LeanTween.moveLocalX(left8, 0, 0);
 		LeanTween.moveLocalX(right8, 0, 0);
 		LeanTween.moveY(playButton, buttonFinalPosition - 80, 0);
@@ -51,8 +54,12 @@ public class MenuAnimations : MonoBehaviour
 		LeanTween.alpha(playSymbol.GetComponent<RectTransform>(), 1, 0.8f).setDelay(titleDelay + 0.3f + (fadeTime * 0.35f)).setEaseOutQuad();
 		// Move up
 		LeanTween.moveY(playButton, buttonFinalPosition, 0.8f).setDelay(titleDelay + (fadeTime * 0.35f)).setEaseOutQuad();
-		LeanTween.moveLocalY(playSymbol, 200, 0.8f).setDelay(titleDelay + (fadeTime * 0.35f)).setEaseOutQuad();
-			//.setOnComplete(() => playButton.GetComponent<Button>().interactable = true);
+		LeanTween.moveLocalY(playSymbol, 200, 0.8f).setDelay(titleDelay + (fadeTime * 0.35f)).setEaseOutQuad()
+			.setOnComplete(() => playButton.GetComponent<Button>().interactable = true);
+		
+		// Animate-in changeThemeButton
+		LeanTween.alpha(changeThemeButton.GetComponent<RectTransform>(), 1, 0.8f).setDelay(titleDelay + 0.3f + (fadeTime * 0.35f)).setEaseOutQuad()
+			.setOnComplete(() => changeThemeButton.GetComponent<Animator>().enabled = true);
 	}
 	
 	public void Play()

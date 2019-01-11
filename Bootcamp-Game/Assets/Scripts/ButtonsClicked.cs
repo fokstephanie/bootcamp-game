@@ -64,6 +64,16 @@ public class ButtonsClicked : MonoBehaviour
 			.setOnComplete(SwitchCanvas);
 	}
 
+	public void ClickRestart()
+	{
+		blackScreen.SetActive((true));
+		LeanTween.alpha(blackScreen.GetComponent<RectTransform>(), 0, 0);
+		
+		// Animate blackScreen fade, switch scenes
+		LeanTween.alpha(blackScreen.GetComponent<RectTransform>(), 1, 0.8f).setEaseInCubic()
+			.setOnComplete(() => LoadScene("Main"));
+	}
+
 	private void SwitchCanvas()
 	{
 		regularCanvas.SetActive(false);

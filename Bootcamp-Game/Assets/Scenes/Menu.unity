@@ -1127,6 +1127,7 @@ MonoBehaviour:
   blackScreen: {fileID: 715261913}
   playButton: {fileID: 1784953604}
   playSymbol: {fileID: 453692839}
+  changeThemeButton: {fileID: 500688445}
 --- !u!114 &180546004
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6048,6 +6049,7 @@ MonoBehaviour:
   blackScreen: {fileID: 1916885165}
   playButton: {fileID: 560166233}
   playSymbol: {fileID: 940086192}
+  changeThemeButton: {fileID: 500688445}
 --- !u!114 &1115748040
 MonoBehaviour:
   m_ObjectHideFlags: 0
