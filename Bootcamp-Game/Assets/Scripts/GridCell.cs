@@ -17,18 +17,20 @@ public class GridCell : MonoBehaviour, IPointerUpHandler, IPointerDownHandler
 	
 	public void OnPointerUp(PointerEventData eventData)
 	{
+		/*
 		// this.cell.color = Color.blue;
 		Vector2 newMousePosition = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
 		var raycastHit = Physics2D.BoxCast(newMousePosition, Vector2.one * 20, 0, Vector2.one);
 		if (raycastHit.collider.transform == this.transform)
 		{
-			// this.cell.color = Color.blue;
+			this.cell.color = Color.blue;
 		}
+		*/
 	}
 
 	public int getQuadrant(Vector2 position)
 	{
-		
+		Debug.Log("getQuadrant");
 		float squareSize = collider.size.x;
 		float xDifference = (position.x - startingPoint.position.x) / squareSize;
 		float yDifference = (startingPoint.position.y - position.y) / squareSize;
@@ -40,8 +42,8 @@ public class GridCell : MonoBehaviour, IPointerUpHandler, IPointerDownHandler
 		// Check which quadrant of the square mousePosition is in
 		/*  1	2
 			3	4	*/
-		float quadrantXDifference = xDifference - col;
-		float quadrantYDifference = yDifference - row;
+		// float quadrantXDifference = xDifference - col;
+		// float quadrantYDifference = yDifference - row;
 		Vector2 topLeftSquareIndex;
 
 		topLeftSquareIndex = new Vector2((float)col, (float)row);

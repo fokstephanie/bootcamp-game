@@ -9,7 +9,6 @@ public class GridAnimation : MonoBehaviour {
 	public GameObject[,] gridArray = new GameObject[8, 8];
 	public GameObject blackScreen;
 	private float fadeTime = 0.8f;
-	private float initialDelay = 0.5f;
 
 	// Use this for initialization
 	void Start ()

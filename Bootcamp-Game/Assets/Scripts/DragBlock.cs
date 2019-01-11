@@ -7,7 +7,6 @@ using UnityEngine.EventSystems;
 public class DragBlock : MonoBehaviour, IPointerDownHandler, IPointerUpHandler {
 
 	private bool dragging = false;
-	private Vector3 newPosition;
 	private float distance;
 	private Vector3 originalPosition;
 	private Vector3 largeSize = new Vector3(1.6f, 1.6f, 1.6f);
@@ -19,7 +18,6 @@ public class DragBlock : MonoBehaviour, IPointerDownHandler, IPointerUpHandler {
 
 	public void OnPointerDown(PointerEventData eventData)
 	{
-		// newPosition = Vector3.Distance(transform.position, Camera.main.transform.position);
 		dragging = true;
 		transform.localScale = largeSize;
 	}
@@ -45,13 +43,13 @@ public class DragBlock : MonoBehaviour, IPointerDownHandler, IPointerUpHandler {
 	{
 		if (dragging) {
 			transform.position = Input.mousePosition;
-			newPosition = transform.position;
 		} 
 	}
 
 	// Use this for initialization
 	void Start () {
 		originalPosition = transform.localPosition;
+		observer = GameObject.Find("PlayGridHorizontal").GetComponent<GridObserver>();
 	}
 
 }

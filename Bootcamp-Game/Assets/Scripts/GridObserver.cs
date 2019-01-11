@@ -8,14 +8,28 @@ public class GridObserver : MonoBehaviour
 	public  bool[,] gridBoolArray = new bool[8, 8];
 	public  GameObject[,] gridColourArray = new GameObject[8, 8];
 	public  float squareSize;
-	public  Vector4 gridBoundriesExtended;
-	public  Vector4 gridBoundriesActual;
 	public GameObject grid;
 	public GameObject settingsPrompt;
 	public GameObject backToHomePrompt;
-	public Camera mainCam;
+	public GameObject carousel;
+	private Transform carouselPanel1;
+	private Transform carouselPanel2;
+	private Transform carouselPanel3;
+	public Object zBlock;
+	public Object sBlock;
+	public Object lBlock;
+	public Object reverseLBlock;
+	public Object tBlock;
+	public Object iBlock;
+	public Object flatIBlock;
+	public Object smallOBlock;
+	public Object oBlock;
+	public Object bigOBlock;
 	public float raycastSize = 20f;
 	private Color32 darkBlue = new Color32(26, 47, 58, 255);
+	private float blocksPlaced = 0;
+
+	private Object[] arrayOfBlocks = new Object[10];
 
 	public enum BlockTypes
 	{
@@ -119,6 +133,18 @@ public class GridObserver : MonoBehaviour
 	// Use this for initialization
 	void Start ()
 	{
+		// Initialize arrayOfBlocks 
+		arrayOfBlocks[0] = zBlock;
+		arrayOfBlocks[1] = sBlock;
+		arrayOfBlocks[2] = lBlock;
+		arrayOfBlocks[3] = reverseLBlock;
+		arrayOfBlocks[4] = tBlock;
+		arrayOfBlocks[5] = iBlock;
+		arrayOfBlocks[6] = flatIBlock;
+		arrayOfBlocks[7] = smallOBlock;
+		arrayOfBlocks[8] = oBlock;
+		arrayOfBlocks[9] = bigOBlock;
+			
 		backToHomePrompt.SetActive(false);
 		settingsPrompt.SetActive(false);
 		int rowCount = 0;
@@ -148,8 +174,8 @@ public class GridObserver : MonoBehaviour
 		squareSize = 37;
 		
 		// (left, right, top, bottom)
-		gridBoundriesExtended = new Vector4(0, 339, 571, 231);
-		gridBoundriesActual = new Vector4(38, 339, 534, 231);
+		// gridBoundriesExtended = new Vector4(0, 339, 571, 231);
+		// gridBoundriesActual = new Vector4(38, 339, 534, 231);
 
 	}
 
@@ -264,7 +290,45 @@ public class GridObserver : MonoBehaviour
 		return blockArray;
 	}
 
-	public  void BlockSet(BlockTypes blockType, Vector2 topLeftSquareIndex)
+	private void GenerateNewBlocks()
+	{
+		int random1 = Random.Range(0, 10);
+		int random2 = Random.Range(0, 10);
+		int random3 = Random.Range(0, 10);
+		Debug.Log("random1: " + random1);
+		Debug.Log("random2: " + random2);
+		Debug.Log("random3: " + random3);
+		
+		Transform[] carouselAllChildren;
+		carouselAllChildren = carousel.GetComponentsInChildren<Transform>();
+		Transform[] carouselFirstChildren = new Transform[carousel.transform.childCount];
+		int index = 0;
+		foreach (Transform child in carouselAllChildren)
+		{
+			if (child.parent == carousel.transform)
+			{
+				carouselFirstChildren[index] = child;
+				index++;
+			}
+		}
+		carouselPanel1 = carouselFirstChildren[0];
+		carouselPanel2 = carouselFirstChildren[1];
+		carouselPanel3 = carouselFirstChildren[2];
+		
+		// Get blocks associated with random numbers
+		Object randomObj1 = arrayOfBlocks[random1];
+		Object randomObj2 = arrayOfBlocks[random2];
+		Object randomObj3 = arrayOfBlocks[random3];
+		
+		//Instantiate(randomObj1, new Vector3(0, 0, 0), Quaternion.identity, carouselPanel1);
+		//Instantiate(randomObj2, new Vector3(0, 0, 0), Quaternion.identity, carouselPanel2);
+		//Instantiate(randomObj3, new Vector3(0, 0, 0), Quaternion.identity, carouselPanel3);
+		Instantiate(randomObj1, carouselPanel1, false);
+		Instantiate(randomObj2, carouselPanel2, false);
+		Instantiate(randomObj3, carouselPanel3, false);
+	}
+
+	private void BlockSet(BlockTypes blockType, Vector2 topLeftSquareIndex)
 	{
 		int col = (int)topLeftSquareIndex.x;
 		int row = (int)topLeftSquareIndex.y;
@@ -287,6 +351,12 @@ public class GridObserver : MonoBehaviour
 		
 		// Check lines that are in rows/cols that the placed block lies in
 		CheckLines(arrayRows, arrayCols, topLeftSquareIndex);
+		blocksPlaced++;
+		if (blocksPlaced == 3)
+		{
+			blocksPlaced = 0;
+			GenerateNewBlocks();
+		}
 	}
 
 	private void SetColours(int row, int col, Color val)
@@ -397,8 +467,6 @@ public class GridObserver : MonoBehaviour
 	public  bool canDropBlock(Vector3 mousePosition, BlockTypes blockType)
 	{
 		Vector3 topLeftCoordinate = getTopLeftBlockCoordinate(mousePosition, blockType);
-		// Debug.Log("topLeftCoordinate.x: " + topLeftCoordinate.x);
-		// Debug.Log("topLeftCoordinate.y: " + topLeftCoordinate.y);
 		
 		Vector2 topLeftCoordinatev2 = new Vector2(topLeftCoordinate.x, topLeftCoordinate.y);
 		Vector2 topLeftSquareIndex = new Vector2();
