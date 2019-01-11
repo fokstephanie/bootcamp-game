@@ -19,7 +19,7 @@ public class MenuAnimations : MonoBehaviour
 
 	// Use this for initialization
 	void Start () {
-		float titleDelay = 0.5f;
+		float titleDelay = 0.85f;
 		float titleAnimationTime = 1.4f;
 		float new8XPosition = 69.5f;
 		float fadeTime = 1.1f;
