@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e6457079-7e62-4874-a05a-cbf1512f9ea8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Bootcamp-Game/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Bootcamp-Game/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GridObserver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GridObserver.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ProtocolInstance.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ProtocolInstance.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll.mdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll.mdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/assetDatabase3" beforeDir="false" afterPath="$PROJECT_DIR$/Library/assetDatabase3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/46/463494daf4bc24c5abad1ca24e4cc1e0" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/46/463494daf4bc24c5abad1ca24e4cc1e0" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Temp/__Backupscenes/0.backup" beforeDir="false" afterPath="$PROJECT_DIR$/Temp/__Backupscenes/0.backup" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/CrashedAssetImports.txt" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,8 +35,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/GridObserver.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="328" lean-forward="true" selection-start-line="328" selection-end-line="328" />
+            <state relative-caret-position="840">
+              <caret line="353" column="30" selection-start-line="353" selection-start-column="30" selection-end-line="353" selection-end-column="30" />
               <folding>
                 <marker date="1547227502901" expanded="false" signature="6:100" ph="..." />
                 <marker date="1547227502901" expanded="true" signature="143:14898" ph="{...}" />
@@ -157,26 +149,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/ColourSliderHandler.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="838">
-              <caret line="76" column="5" selection-start-line="76" selection-start-column="5" selection-end-line="76" selection-end-column="5" />
-              <folding>
-                <marker date="1547159748887" expanded="false" signature="6:132" ph="..." />
-                <marker date="1547159748887" expanded="true" signature="222:2106" ph="{...}" />
-                <marker date="1547159748887" expanded="true" signature="949:1208" ph="{...}" />
-                <marker date="1547159748887" expanded="true" signature="1262:1271" ph="{...}" />
-                <marker date="1547159748887" expanded="true" signature="1328:1496" ph="{...}" />
-                <marker date="1547159748887" expanded="true" signature="1368:1493" ph="{...}" />
-                <marker date="1547159748887" expanded="true" signature="1551:1688" ph="{...}" />
-                <marker date="1547159748887" expanded="true" signature="1725:2104" ph="{...}" />
-                <marker date="1547159748887" expanded="true" signature="1897:2101" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/MenuAnimations.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="885">
@@ -264,7 +236,6 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GridCell.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DragBlock.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MenuAnimations.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/ColourSliderHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GridObserver.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayButton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIParticleSystem.cs" root0="FORCE_HIGHLIGHTING" />
@@ -349,12 +320,12 @@
       <workItem from="1546974645985" duration="11109000" />
       <workItem from="1547044705963" duration="21412000" />
       <workItem from="1547132094201" duration="19953000" />
-      <workItem from="1547218448833" duration="7674000" />
+      <workItem from="1547218448833" duration="7967000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60148000" />
+    <option name="totallyTimeSpent" value="60441000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -441,17 +412,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="838">
           <caret line="76" column="5" selection-start-line="76" selection-start-column="5" selection-end-line="76" selection-end-column="5" />
-          <folding>
-            <marker date="1547159748887" expanded="false" signature="6:132" ph="..." />
-            <marker date="1547159748887" expanded="true" signature="222:2106" ph="{...}" />
-            <marker date="1547159748887" expanded="true" signature="949:1208" ph="{...}" />
-            <marker date="1547159748887" expanded="true" signature="1262:1271" ph="{...}" />
-            <marker date="1547159748887" expanded="true" signature="1328:1496" ph="{...}" />
-            <marker date="1547159748887" expanded="true" signature="1368:1493" ph="{...}" />
-            <marker date="1547159748887" expanded="true" signature="1551:1688" ph="{...}" />
-            <marker date="1547159748887" expanded="true" signature="1725:2104" ph="{...}" />
-            <marker date="1547159748887" expanded="true" signature="1897:2101" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -598,8 +558,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/GridObserver.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="328" lean-forward="true" selection-start-line="328" selection-end-line="328" />
+        <state relative-caret-position="840">
+          <caret line="353" column="30" selection-start-line="353" selection-start-column="30" selection-end-line="353" selection-end-column="30" />
           <folding>
             <marker date="1547227502901" expanded="false" signature="6:100" ph="..." />
             <marker date="1547227502901" expanded="true" signature="143:14898" ph="{...}" />
